@@ -164,8 +164,9 @@
 }
 
 .weeklyassigned{
-    padding: 15px;
+    padding: 12px;
     border: 1px solid #f0f0f0;
+    margin-right: 10px;
 }
 
 .ticketno{
@@ -173,26 +174,51 @@
 }
 
 .crd-title1{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: #3c3c3c;
 }
 
-.ticketno{
+.ticketno1{
     font-size: 22px;
     font-weight: 500;
     color: #157AFE;
 }
 
-.ticketno1{
+.ticketno2{
+    font-size: 22px;
+    font-weight: 500;
+    color: #e4e420; 
+}
+
+.ticketno3{
     font-size: 22px;
     font-weight: 500;
     color: #fe1515; 
 }
 
+.ticketno4{
+    font-size: 22px;
+    font-weight: 500;
+    color: #fe8215; 
+}
+
 .ticketno1{
     margin-top: 15px !important;
 }
+
+.ticketno2{
+    margin-top: 15px !important;
+}
+
+.ticketno3{
+    margin-top: 15px !important;
+}
+
+.ticketno4{
+    margin-top: 15px !important;
+}
+
 
 .break-horizontal{
     background-color: #f0f0f0;
