@@ -6,7 +6,7 @@
                 <img src="../../assets/home_FILL1_wght400_GRAD0_opsz48.svg" class="img-fluid profileImg" alt="Profile pic">
             </div>
             <div class="img-1 mb-3">
-                <img src="../../assets/analytics_FILL1_wght400_GRAD0_opsz48.svg" class="img-fluid logout" alt="Profile pic">
+                <img src="../../assets/analytics_FILL1_wght400_GRAD0_opsz48.svg" routerLink="/me" class="img-fluid logout" alt="Profile pic">
             </div>
         </div>
     </div>
@@ -64,17 +64,38 @@
         <div class="weeklyTickets_wrapper d-flex flex-row">
             <div class="card weeklyassigned me-3">
                 <div class="card-body d-flex flex-column">
-                    <span class="crd-title1">Tickets Assigned this week</span>
+                    <span class="crd-title1">Orders Assigned from {{currentDate | date:'dd-MM-yyyy'}}</span>
                     <span class="ticketno">15 🗒</span>
                 </div>
             </div>
 
             <div class="card weeklyassigned">
                 <div class="card-body d-flex flex-column">
-                    <span class="crd-title1">Tickets Missed this week</span>
+                    <span class="crd-title1">Orders Missed from {{currentDate | date:'dd-MM-yyyy'}}</span>
                     <span class="ticketno1">5 🗒</span>
                 </div>
             </div>
+        </div>
+
+        <div class="break-horizontal"></div>
+
+        <div class="chart_wrapper mt-5">
+            <div class="card chart-crd">
+                <div class="card-body">
+                    <p>Progress</p>
+                    <div class="chart_wrappers mt-3 mb-4">
+                        <canvas [ngClass]="{'chart2': chart4, 'chart3': chart2, 'chart4': chart3}" id="doughnut-weekly"></canvas> 
+                        <canvas [ngClass]="{'chart3': chart1, 'chart4': chart3, 'chart1': chart4}" id="doughnut-monthly"></canvas> 
+                        <canvas [ngClass]="{'chart1': chart1, 'chart2': chart2, 'chart4': chart4}" id="doughnut-yearly"></canvas>
+                        <canvas [ngClass]="{'chart1': chart1, 'chart2': chart2, 'chart3': chart3}" id="doughnut-overall"></canvas>
+                    </div>
+                    <div class="btn-wrapper">
+                        <span> <button class="btn btn-cstm" (click)="prev()"><img src="../../assets/chevron_left_FILL0_wght400_GRAD0_opsz48.svg" style="height: 28px; width: 28px;" class="img-fluid" alt="right"></button> </span>
+                        <span> {{'Lorem ipsm'}} </span>
+                        <span> <button class="btn btn-cstm" (click)="nxt()"><img src="../../assets/chevron_right_FILL0_wght400_GRAD0_opsz48.svg" style="height: 28px; width: 28px;" class="img-fluid" alt="right"></button> </span>
+                    </div>
+                </div>
+            </div> 
         </div>
         
     </div>
