@@ -193,3 +193,49 @@
 .ticketno1{
     margin-top: 15px !important;
 }
+
+.break-horizontal{
+    background-color: #f0f0f0;
+    width: 45vw;
+    height: 1px;
+    position: absolute;
+    top: 160px;
+}
+
+.chart_wrapper{
+    width: 300px;
+}
+
+.chart-crd{
+    padding: 10px;
+}
+
+.chartjs-render-monitor {
+    height: 238px !important;
+    width: 480px !important;
+    margin-left: -102px;
+}
+
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.chart1{
+    display: none !important;
+}
+
+.chart2{
+    display: none !important;
+}
+
+.chart3{
+    display: none !important;
+}
+
+.chart4{
+    display: none !important;
+}
