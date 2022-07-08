@@ -38,7 +38,8 @@ export class MEComponent implements OnInit  {
   jsonBody:any;
   fileName= 'ItemMaster.xlsx';
   IsDisplayExportButton:boolean=false;
-  chart:any;
+  barChart:any;
+  doughtNutChart:any;
 
   constructor( private cdr: ChangeDetectorRef, private route: Router) {
   }
@@ -143,6 +144,20 @@ export class MEComponent implements OnInit  {
     isActive: true,
   }];
 
+  doughNutData :any = {
+    datasets: [{
+        data: [10, 20, 30],
+        backgroundColor:['red','yellow','blue']
+    }],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        'deadline miss',
+        'printer oversight',
+        'orders correctly delivered'
+    ]
+};
+
   ngOnInit(): void {
 
     this.configuration = { ...DefaultConfig };
@@ -158,7 +173,7 @@ export class MEComponent implements OnInit  {
       { key: 'isActive', title: 'STATUS' },
     ];
 
-    this.chart = new Chart('bar', {
+    this.barChart = new Chart('bar', {
       type: 'bar',
       options: {
         responsive: true,
@@ -203,30 +218,53 @@ export class MEComponent implements OnInit  {
         ]
       }
     });
-   
 
-    const datapie = {
-      labels: [
-        'Red',
-        'Blue',
-        'Yellow'
-      ],
-      datasets: [{
-        label: 'My First Dataset',
-        data: [300, 50, 100],
-        backgroundColor: [
-          'rgb(255, 99, 132)',
-          'rgb(54, 162, 235)',
-          'rgb(255, 205, 86)'
-        ],
-        hoverOffset: 4
-      }]
-    };
-
-    const config = {
+    this.doughtNutChart = new Chart('doughnut-weekly', {
       type: 'doughnut',
-      data: datapie,
-    };
+      data: this.doughNutData,
+      // options: options
+  });
+
+  this.doughtNutChart = new Chart('doughnut-monthly', {
+    type: 'doughnut',
+    data: this.doughNutData,
+    // options: options
+   });
+
+   this.doughtNutChart = new Chart('doughnut-yearly', {
+    type: 'doughnut',
+    data: this.doughNutData,
+    // options: options
+   });
+   
+   this.doughtNutChart = new Chart('doughnut-overall', {
+    type: 'doughnut',
+    data: this.doughNutData,
+    // options: options
+   });
+
+    // const datapie = {
+    //   labels: [
+    //     'Red',
+    //     'Blue',
+    //     'Yellow'
+    //   ],
+    //   datasets: [{
+    //     label: 'My First Dataset',
+    //     data: [300, 50, 100],
+    //     backgroundColor: [
+    //       'rgb(255, 99, 132)',
+    //       'rgb(54, 162, 235)',
+    //       'rgb(255, 205, 86)'
+    //     ],
+    //     hoverOffset: 4
+    //   }]
+    // };
+
+    // const config = {
+    //   type: 'doughnut',
+    //   data: datapie,
+    // };
 
   }
 
