@@ -89,10 +89,14 @@
                         <canvas [ngClass]="{'chart1': chart1, 'chart2': chart2, 'chart4': chart4}" id="doughnut-yearly"></canvas>
                         <canvas [ngClass]="{'chart1': chart1, 'chart2': chart2, 'chart3': chart3}" id="doughnut-overall"></canvas>
                     </div>
+                    
                     <div class="btn-wrapper">
                         <span> <button class="btn btn-cstm" (click)="prev()"><img src="../../assets/chevron_left_FILL0_wght400_GRAD0_opsz48.svg" style="height: 28px; width: 28px;" class="img-fluid" alt="right"></button> </span>
-                        <span> {{progressOption}} </span>
+                        <span style="cursor: pointer;"> {{progressOption}} </span>                       
                         <span> <button class="btn btn-cstm" (click)="nxt()"><img src="../../assets/chevron_right_FILL0_wght400_GRAD0_opsz48.svg" style="height: 28px; width: 28px;" class="img-fluid" alt="right"></button> </span>
+                    </div>
+                    <div class="date_wrapper" *ngIf="date ? 'true' : 'false'">
+                        <input class="dateInput" type="date" id="birthday" name="birthday">   
                     </div>
                 </div>
             </div> 

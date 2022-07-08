@@ -28,6 +28,8 @@ export class HomeComponent implements OnInit {
   chart3: boolean = false;
   chart4: boolean = false;
 
+  date: boolean = false;
+
   progressOption: string = 'Weekly'
 
   currentDate = new Date();
@@ -415,6 +417,10 @@ weekly :any = {
       this.chart4 = false;
       this.chart3 = false;
     }
+  }
+
+  showDate() {
+    this.date = true
   }
 
 }
