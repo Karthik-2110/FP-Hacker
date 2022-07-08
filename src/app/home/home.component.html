@@ -6,7 +6,7 @@
                 <img src="../../assets/home_FILL1_wght400_GRAD0_opsz48.svg" class="img-fluid profileImg" alt="Profile pic">
             </div>
             <div class="img-1 mb-3">
-                <img src="../../assets/analytics_FILL1_wght400_GRAD0_opsz48.svg" routerLink="/me" class="img-fluid logout" alt="Profile pic">
+                <img src="../../assets/analytics_FILL1_wght400_GRAD0_opsz48.svg" routerLink="/FP-Site" class="img-fluid logout" alt="Profile pic">
             </div>
         </div>
     </div>
@@ -70,14 +70,28 @@
             <div class="card weeklyassigned me-3">
                 <div class="card-body d-flex flex-column">
                     <span class="crd-title1">Orders Assigned from {{currentDate | date:'dd-MM-yyyy'}}</span>
-                    <span class="ticketno">15 🗒</span>
+                    <span class="ticketno1">15 🗒</span>
                 </div>
             </div>
 
             <div class="card weeklyassigned">
                 <div class="card-body d-flex flex-column">
                     <span class="crd-title1">Orders Missed from {{currentDate | date:'dd-MM-yyyy'}}</span>
-                    <span class="ticketno1">5 🗒</span>
+                    <span class="ticketno2">5 🗒</span>
+                </div>
+            </div>
+
+            <div class="card weeklyassigned">
+                <div class="card-body d-flex flex-column">
+                    <span class="crd-title1">Printer Oversight from {{currentDate | date:'dd-MM-yyyy'}}</span>
+                    <span class="ticketno3">8 🗒</span>
+                </div>
+            </div>
+
+            <div class="card weeklyassigned">
+                <div class="card-body d-flex flex-column">
+                    <span class="crd-title1">Missing Garments from {{currentDate | date:'dd-MM-yyyy'}}</span>
+                    <span class="ticketno4">2 🗒</span>
                 </div>
             </div>
         </div>
@@ -97,11 +111,11 @@
                     
                     <div class="btn-wrapper">
                         <span> <button class="btn btn-cstm" (click)="prev()"><img src="../../assets/chevron_left_FILL0_wght400_GRAD0_opsz48.svg" style="height: 28px; width: 28px;" class="img-fluid" alt="right"></button> </span>
-                        <span style="cursor: pointer;"> {{progressOption}} </span>                       
+                        <span style="cursor: pointer;" (click)="date = !date"> {{progressOption}} </span>                       
                         <span> <button class="btn btn-cstm" (click)="nxt()"><img src="../../assets/chevron_right_FILL0_wght400_GRAD0_opsz48.svg" style="height: 28px; width: 28px;" class="img-fluid" alt="right"></button> </span>
                     </div>
-                    <div class="date_wrapper" *ngIf="date ? 'true' : 'false'">
-                        <input class="dateInput" type="date" id="birthday" name="birthday">   
+                    <div class="date_wrapper" *ngIf="date">
+                        <input class="dateInput" type="date" id="date" name="date">   
                     </div>
                 </div>
             </div> 
