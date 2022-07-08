@@ -1,1 +1,81 @@
-<p class="h1 text-center">homies rock!</p>
+<div class="container-fluid">
+    <div class="side_nav">
+        <!-- <div class="dashboard_name">Printer Analytics</div> -->
+        <div class="profile_wrapper d-flex flex-column">
+            <div class="img-1 mb-3">
+                <img src="../../assets/home_FILL1_wght400_GRAD0_opsz48.svg" class="img-fluid profileImg" alt="Profile pic">
+            </div>
+            <div class="img-1 mb-3">
+                <img src="../../assets/analytics_FILL1_wght400_GRAD0_opsz48.svg" class="img-fluid logout" alt="Profile pic">
+            </div>
+        </div>
+    </div>
+
+    <div class="breaker">
+    </div>
+
+    <div class="first-column position-absolute">
+        <div class="user_profile_wrapper">
+            <img src="../../assets/profilePics.jpeg" alt="img" class="img-fluid profile__pic">
+        </div>
+        <div class="user_name">
+            Amaira
+        </div>
+
+        <div class="profile_div">
+            <span>Profile</span>
+            <span><img src="../../assets/person_FILL1_wght400_GRAD0_opsz48.svg" class="person" alt=""></span>
+        </div>
+
+        <div class="totoal_earning mt-4">
+            <p class="moneyTitle">Total Balance</p>
+            <p class="money mt-2">$15,876</p>
+            <p class="usd">USD</p>
+        </div>
+
+        <div class="date mt-4">
+            <span class="titiledate">📅 Date</span>
+           <span class="date_org ms-5">{{currentDate | date:'dd-MM-yyyy'}}</span> 
+        </div>
+
+        <div class="date mt-3">
+            <span class="titiledate">🖨 Printer status</span>
+           <span class="date_orginall ms-4">Active</span> 
+        </div>
+
+        <div class="progress_wrappper mt-5">
+            <div class="progress_container">
+                <span class="progress-title">Weekly Progress</span> <br>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 68%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="breaker1">
+    </div>
+
+    <div class="second-column position-absolute">
+        <div>
+            <h1 class="title_main">Printer Analytics</h1>
+        </div>
+
+        <div class="weeklyTickets_wrapper d-flex flex-row">
+            <div class="card weeklyassigned me-3">
+                <div class="card-body d-flex flex-column">
+                    <span class="crd-title1">Tickets Assigned this week</span>
+                    <span class="ticketno">15 🗒</span>
+                </div>
+            </div>
+
+            <div class="card weeklyassigned">
+                <div class="card-body d-flex flex-column">
+                    <span class="crd-title1">Tickets Missed this week</span>
+                    <span class="ticketno1">5 🗒</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

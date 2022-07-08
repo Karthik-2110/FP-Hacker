@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.dashboard_name{
+    font-size: 25px;
+    font-weight: 600;
+    color: #3c3c3c;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.profile_wrapper{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.profileImg{
+    height: 25px;
+    width: 25px;
+}
+
+.logout{
+    height: 25px;
+    width: 25px;
+}
+
+.breaker{
+    background-color: #f0f0f0;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    top: -30px;
+    left: 70px;
+}
+
+.first-column{
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__pic{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.user_name{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.profile_div{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    border: 1px solid #b9b9b9;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.person{
+    height: 22px;
+    width: 22px;
+    margin-left: 3px;
+}
+
+.totoal_earning{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moneyTitle{
+    font-size: 15px;
+    font-weight: 500;
+    color: #b9b9b9;
+}
+
+.money{
+    color: #157AFE;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.usd{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #b9b9b9;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+}
+
+.titiledate{
+    color: #3c3c3c;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.date_org{
+    color: #3c3c3c;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.date_orginall{
+    color: #27e800;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.progress_wrappper{
+    border: 1px solid #f0f0f0;
+    padding-top: 7px;
+    padding-bottom: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+}
+
+.progress{
+    width: 176px;
+    height: 9px;
+}
+
+.progress-title{
+    color: #3c3c3c;
+    font-weight: 500;
+}
+
+.breaker1{
+    background-color: #f0f0f0;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    top: -30px;
+    left: 380px;
+}
+
+.second-column{
+    top: 0;
+    left: 395px;
+}
+
+.title_main{
+    font-weight: 600;
+    color: #3c3c3c;
+}
+
+.weeklyassigned{
+    padding: 15px;
+    border: 1px solid #f0f0f0;
+}
+
+.ticketno{
+    margin-top: 15px !important;
+}
+
+.crd-title1{
+    font-size: 18px;
+    font-weight: 500;
+    color: #3c3c3c;
+}
+
+.ticketno{
+    font-size: 22px;
+    font-weight: 500;
+    color: #157AFE;
+}
+
+.ticketno1{
+    font-size: 22px;
+    font-weight: 500;
+    color: #fe1515; 
+}
+
+.ticketno1{
+    margin-top: 15px !important;
+}
