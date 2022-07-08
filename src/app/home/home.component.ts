@@ -167,8 +167,8 @@ export class HomeComponent implements OnInit {
 
 monthly :any = {
   datasets: [{
-      data: [40, 10, 50],
-      backgroundColor:['red','yellow','blue']
+      data: [40, 10, 50, 100],
+      backgroundColor:['#000','yellow','blue','green']
   }],
 
   
@@ -256,7 +256,7 @@ weekly :any = {
         datasets: [
           {
             type: 'bar',
-            label: 'Income',
+            label: 'year 2021',
             data: [12000, 10000, 15000, 20000, 25000, 9000, 21000, 8000, 11000, 24000, 18000, 12000],
             backgroundColor: '#85FF5F',
             fill: true,
@@ -264,8 +264,8 @@ weekly :any = {
            
           {
             type: 'bar',
-            label: 'Expenses',
-            data: [7000, 8000, 19000, 10000, 11000, 13000, 24000, 16000, 16000, 18000, 14000, 10000].reverse(),
+            label: 'year 2022',
+            data: [0, 0, 0, 0, 0, 13000, 24000, 16000, 16000, 18000, 14000, 15000].reverse(),
             backgroundColor: '#FF8383',
             fill: true,
             
