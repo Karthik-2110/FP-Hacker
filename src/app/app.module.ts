@@ -9,6 +9,9 @@ import { FormsModule } from '@angular/forms'
 import { ApplicationModule } from './application/application.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     ApplicationModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

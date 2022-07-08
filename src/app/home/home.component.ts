@@ -28,6 +28,8 @@ export class HomeComponent implements OnInit {
   chart3: boolean = false;
   chart4: boolean = false;
 
+  date: boolean = false;
+
   progressOption: string = 'Weekly'
 
   currentDate = new Date();
@@ -363,21 +365,25 @@ weekly :any = {
 
   prev() {
     if(this.chart1) {
+      this.progressOption = 'Weekly';
       this.chart1 = false;
       this.chart2 = false;
       this.chart3 = false;
       this.chart4 = true;
     } else if (this.chart2) {
+      this.progressOption = 'Monthly';
       this.chart2 = false;
       this.chart1 = true;
       this.chart4 = false;
       this.chart3 = false;
     } else if (this.chart3) {
+      this.progressOption = 'Yearly';
       this.chart2 = true;
       this.chart1 = false;
       this.chart4 = false;
       this.chart3 = false;
     } else if (this.chart4) {
+      this.progressOption = 'Overall Progress';
       this.chart2 = false;
       this.chart1 = false;
       this.chart4 = false;
@@ -387,26 +393,34 @@ weekly :any = {
 
   nxt() {
     if(this.chart1) {
+      this.progressOption = 'Monthly';
       this.chart1 = false;
       this.chart2 = true;
       this.chart3 = false;
       this.chart4 = false;
     } else if (this.chart2) {
+      this.progressOption = 'Yearly';
       this.chart2 = false;
       this.chart1 = false;
       this.chart4 = false;
       this.chart3 = true;
     } else if (this.chart3) {
+      this.progressOption = 'Overall Progress';
       this.chart2 = false;
       this.chart1 = false;
       this.chart4 = true;
       this.chart3 = false;
     } else if (this.chart4) {
+      this.progressOption = 'Weekly';
       this.chart2 = false;
       this.chart1 = true;
       this.chart4 = false;
       this.chart3 = false;
     }
+  }
+
+  showDate() {
+    this.date = true
   }
 
 }

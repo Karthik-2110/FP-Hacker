@@ -239,3 +239,18 @@
 .chart4{
     display: none !important;
 }
+
+.date_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dateInput{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #3c3c3c;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
