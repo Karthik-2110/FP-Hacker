@@ -45,104 +45,82 @@ export class MEComponent implements OnInit  {
   }
 
   public data = [{
-    phone: '+1 (934) 551-2224',
-    age: 20,
-    address: { street: 'North street', number: 12 },
-    company: 'ZILLANET',
-    name: 'Valentine Webb',
-    isActive: false,
+    no: 65831,
+    date: '05-05-2022',
+    fpCost:'$1,891.50',
+    printerCost: '$50',
+    description: 'Client didnt like it',
   }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }, {
-    phone: '+1 (948) 460-3627',
-    age: 31,
-    address: { street: 'South street', number: 12 },
-    company: 'KNOWLYSIS',
-    name: 'Heidi Duncan',
-    isActive: true,
-  }];
+    no: 66052,
+    date: '05-06-2022',
+    fpCost:'1,000.00',
+    printerCost: '$60',
+    description: 'CM Miscommunicated info',
+  },
+  {
+    no: 65057,
+    date: '05-07-2022',
+    fpCost:'$182.00',
+    printerCost: '$70',
+    description: 'Printer Oversight',
+  },
+  {
+    no: 58605,
+    date: '11-06-2022',
+    fpCost:'$8.90',
+    printerCost: '$3,300.00',
+    description: 'Printer Oversight',
+  },
+  {
+    no: 62729,
+    date: '11-05-2022',
+    fpCost:'$1,676.99',
+    printerCost: '$1,322.75',
+    description: 'CM Miscommunicated info',
+  },
+  {
+    no: 65831,
+    date: '05-05-2022',
+    fpCost:'$500',
+    printerCost: '$50',
+    description: 'client didnt like.',
+  },
+  {
+    no: 64955,
+    date: '05-05-2022',
+    fpCost:'$0',
+    printerCost: '$975.00',
+    description: 'printer oversight',
+  },
+  {
+    no: 67689,
+    date: '05-05-2022',
+    fpCost:'$0',
+    printerCost: '$900',
+    description: 'Printer Oversight',
+  },
+  {
+    no: 65186,
+    date: '05-05-2022',
+    fpCost:'$0',
+    printerCost: '$191.50',
+    description: 'printer oversight',
+  },
+  {
+    no: 66552,
+    date: '05-04-2022',
+    fpCost:'$100.00',
+    printerCost: '$0',
+    description: 'Client Error',
+  },
+  {
+    no: 66965,
+    date: '08-07-2022',
+    fpCost:'$922.00',
+    printerCost: '$0',
+    description: 'UPS Error',
+  },
+];
 
   doughNutData :any = {
     datasets: [{
@@ -161,16 +139,16 @@ export class MEComponent implements OnInit  {
   ngOnInit(): void {
 
     this.configuration = { ...DefaultConfig };
-    this.configuration.resizeColumn = true;
+    this.configuration.resizeColumn = false;
     this.configuration.fixedColumnWidth = false;
     this.configuration.selectRow = true;
 
     this.columns = [
-      { key: 'phone', title: 'Phone' },
-      { key: 'age', title: 'Age' },
-      { key: 'company', title: 'Company' },
-      { key: 'name', title: 'Name' },
-      { key: 'isActive', title: 'STATUS' },
+      { key: 'no', title: 'Order Number' },
+      { key: 'date', title: 'Issue Noted Date' },      
+      { key: 'fpCost', title: 'Cost of Resolution by FP' },
+      { key: 'printerCost', title: 'Cost of Resolution by Printer' },
+      { key: 'description', title: 'Description' },
     ];
 
     this.barChart = new Chart('bar', {
