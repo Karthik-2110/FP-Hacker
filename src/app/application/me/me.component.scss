@@ -1,0 +1,220 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content_wrapper{
+  position: relative;
+}
+
+.btn_new{
+  background: #38B896;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.btn:active,
+.btn:focus,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+table{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95% !important;
+  border: 1px solid #EBF5FF;
+}
+
+.pages .active{
+  background-color: #38B896;
+}
+
+
+.ngx-table__header{
+ height: 40px;
+ background-color: #F8FCFF;
+}
+
+.ngx-table__header-title{
+  padding-left: 0px;
+  color: #2e3147;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+table > tbody > tr {
+  color: #474B6D !important;
+  border-bottom: 1px solid #F8FCFF;
+}
+
+table > tbody > tr > td {
+  padding: 15px !important;
+}
+
+.ngx-pagination {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ngx-pagination-wrapper{
+  margin-top: 20px;
+}
+
+.ngx-pagination-steps{
+  margin-left: 35px;
+}
+
+.ngx-pagination-range-dropdown-button {
+  margin-right: 35px;
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #474B6D;
+  font-weight: 500;
+}
+
+.ngx-icon-arrow-down::before {
+  transform: translate(-50%, -75%) rotate(225deg);
+  margin-left: 5px;
+}
+
+.ngx-dropdown .ngx-menu {
+  position: absolute !important;
+  width: 100px !important;
+  top: -172px !important;
+  right: 19px !important;
+  -webkit-box-shadow: 0px 10px 12px 0px rgba(209,209,209,1);
+  -moz-box-shadow: 0px 10px 12px 0px rgba(209,209,209,1);
+  box-shadow: 0px 10px 12px 0px rgba(209,209,209,1);
+}
+
+.ngx-pagination-range-dropdown-button-item {
+  cursor: pointer;
+  color: #474B6D;
+  padding: 6px;
+}
+
+.ngx-pagination-range--selected {
+  color: #474B6D !important;
+  font-weight: 600;
+  background-color: transparent !important;
+}
+
+.ngx-pagination .disabled {
+  padding: 0.1875rem 0.625rem;
+  color: #474B6D;
+  // margin-right: 5px;
+  cursor: default;
+}
+
+.ngx-pagination li {
+  margin-right: 0.0625rem;
+  border-radius: 0;
+  border: 1px solid #e7e9ed;
+  margin-left: 8px;
+}
+
+.ngx-pagination .current {
+  padding: 0.1875rem 0.625rem;
+  background: #F8FCFF;
+  color: #38B896;
+  cursor: default;
+  border: 1px solid #e7e9ed !important;
+}
+
+.emp_id_wrapper{
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+.emp_id{
+  color: #8D90AA;
+  font-size: 13px;
+
+  margin-bottom: 3px;
+
+  font-weight: 500;
+}
+
+.emp_id_form{
+  width: 450px;
+  height: 45px;
+
+  font-size: 15px;
+
+  padding-left: 20px;
+
+  color: #474B6D;
+
+  box-shadow: none !important;
+
+  border: 1px solid #E9E9F0;
+}
+
+.emp_id_form:hover{
+border: 1px solid #519EEB !important;
+}
+
+#emp_id:hover{
+-webkit-box-shadow: 0px 3px 11px -8px rgba(81,158,235,1) !important;
+-moz-box-shadow: 0px 3px 11px -8px rgba(81,158,235,1) !important;
+box-shadow: 0px 3px 11px -8px rgba(81,158,235,1) !important;
+}
+
+.btn-cstm{
+  color: #474B6D;
+  font-size: 15px;
+}
+
+.btn-export{
+  position: absolute;
+  right: 45px;
+  background-color: #38B896;
+  color: white;
+}
+
+.tabDisplay{
+  display: none;
+}
+
+#div-chart {
+  display: block;
+  height: 300px;
+  width: 400px;
+}

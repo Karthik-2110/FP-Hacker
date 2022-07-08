@@ -1,0 +1,44 @@
+<!-- container fluid starts -->
+<div class="container-fluid content_wrapper">
+  <!-- top bar starts -->
+  <!-- top bar ends -->
+
+  <div class="allignment_panel">
+
+
+   <!-- main starts-->
+
+  <div class="row main">
+
+    <div class="emp_id_wrapper">
+      <label class="emp_id">Search bar</label>
+      <input type="text" id="emp_id" class="form-control emp_id_form" type="text"
+      id="globalSearch"
+      (input)="onChange($event)" id="emp_id" autocomplete="off" placeholder="# Search for keywords">
+    </div>
+    <div class="export" *ngIf="IsDisplayExportButton"><button (click)="exportexcel()" class="btn btn-export">Export to Excel</button></div>
+    <div class="col-12">
+      <ngx-table class="table-responsive table-cstm"
+           id="excel-table"
+           #table
+           [configuration]="configuration"
+           [data]="data"
+           [columns]="columns">
+      </ngx-table>
+      <ng-template #actionTpl let-rowIndex="rowIndex">
+        <!-- <div class="btn btn-cstm" [routerLink]="['/scm', data[rowIndex]._id]"><mat-icon aria-hidden="false" aria-label="Example home icon">draw</mat-icon></div> -->
+      </ng-template>
+    </div>
+
+    <div id="div-chart">
+      <canvas style="height: 500px; width: auto;" id="bar"></canvas>
+    </div>
+  </div>
+
+  <!-- main ends -->
+
+  </div>
+
+
+</div>
+<!-- container fluid ends -->
